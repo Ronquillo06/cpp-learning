@@ -1,0 +1,21 @@
+#pragma once
+#include <string>
+
+class Character {
+    private:
+        std::string name;
+        int health;
+        int gold;
+    public:
+        Character(std::string nName, int nHealth, int nGold);
+        
+        std::string getName();
+        int getHealth();
+        int getGold();
+
+        virtual void display();
+
+        void heal(const int& amount);
+        void takeDamage(const int& damage);
+        void earnGold(const int& amount);
+};

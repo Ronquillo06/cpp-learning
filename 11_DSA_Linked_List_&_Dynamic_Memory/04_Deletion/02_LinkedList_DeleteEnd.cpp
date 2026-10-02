@@ -45,7 +45,6 @@ int main() {
     delete node1;
     delete node2;
     delete node3;
-    delete node4;
 
 
     return 0;

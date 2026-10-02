@@ -38,7 +38,7 @@ int main() {
         current = current->next;
     }
 
-    while(current != nullptr) {
+    if (current != nullptr) {
         newNode->next = current->next;
         current->next = newNode;
     }

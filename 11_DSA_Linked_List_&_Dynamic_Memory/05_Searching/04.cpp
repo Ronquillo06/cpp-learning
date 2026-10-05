@@ -32,7 +32,29 @@ int main() {
 
     int target = 20;
 
+    Node* current = head;
+    int index = 0;
+    bool found = false;
     
+    while(current != nullptr) {
+        if(current->data == target) {
+            cout << "Found " << target << " at index " << index << "\n"; 
+            found = true;
+            break;
+        }
+        current = current->next;
+        index++;
+    }
+
+    if(!found) {
+        cout << "Value " << target << " not found in the list.\n";
+    }
+
+    while(head != nullptr) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }    
 
 
     return 0;

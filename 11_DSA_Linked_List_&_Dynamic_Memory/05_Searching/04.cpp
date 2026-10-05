@@ -30,7 +30,9 @@ int main() {
     head->next->next = new Node{30};
     head->next->next->next = new Node{40};
 
-    int target = 20;
+    int target;
+    cout << "Enter Target: ";
+    cin >> target;
 
     Node* current = head;
     int index = 0;

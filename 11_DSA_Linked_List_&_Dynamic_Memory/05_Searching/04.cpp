@@ -9,7 +9,7 @@ struct Node {
 
 int main() {
 
-    Node* node1 = new Node();
+    /*Node* node1 = new Node();
     Node* node2 = new Node();
     Node* node3 = new Node();
     Node* node4 = new Node();
@@ -23,8 +23,13 @@ int main() {
     node2->next = node3;
     node3->next = node4;
 
-    Node* head = node1;
-    
+    Node* head = node1;*/
+
+    Node* head = new Node{10};
+    head->next = new Node{20};
+    head->next->next = new Node{30};
+    head->next->next->next = new Node{40};
+
     int target = 20;
 
     

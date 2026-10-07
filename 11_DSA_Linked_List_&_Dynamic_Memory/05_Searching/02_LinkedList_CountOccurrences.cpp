@@ -18,7 +18,6 @@ int main() {
 
     Node* current = head;
     int occurances = 0;
-    bool appears = false;
     int target;
 
     cout << "Enter Target:";
@@ -27,11 +26,18 @@ int main() {
 
     while(current != nullptr) {
         if(current->data == target) {
-            
+            occurances++;
         }
+        current = current->next;
+       
     }
-
-
+    
+    if(occurances > 0) {
+        cout << target << " appears " << occurances << " times.\n";
+    } else {
+        cout << target << " was not found in the list.\n";
+    }
+    
 
 
     return 0;

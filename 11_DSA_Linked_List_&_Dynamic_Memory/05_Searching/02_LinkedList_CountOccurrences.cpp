@@ -18,13 +18,18 @@ int main() {
 
     Node* current = head;
     int occurances = 0;
+    bool appears = false;
     int target;
 
     cout << "Enter Target:";
     cin >> target;
 
-    
 
+    while(current != nullptr) {
+        if(current->data == target) {
+            
+        }
+    }
 
 
 

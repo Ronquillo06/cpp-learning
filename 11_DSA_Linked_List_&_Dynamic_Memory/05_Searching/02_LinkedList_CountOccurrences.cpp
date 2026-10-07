@@ -37,7 +37,12 @@ int main() {
     } else {
         cout << target << " was not found in the list.\n";
     }
-    
+
+    while(head != nullptr) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
 
 
     return 0;

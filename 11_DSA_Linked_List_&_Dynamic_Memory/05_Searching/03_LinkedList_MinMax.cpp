@@ -24,6 +24,10 @@ int main() {
         if (current->data > max) {
             max = current->data;
         }
+        if(current->data < min) {
+            min = current->data;
+        }
+        current = current->next;
     }
 
 

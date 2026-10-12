@@ -30,6 +30,9 @@ int main() {
         current = current->next;
     }
 
+    cout << "Maximum: " << max << "\n";
+    cout << "Minimum: " << min << "\n"; 
+
 
     while(head != nullptr) {
         Node* temp = head;

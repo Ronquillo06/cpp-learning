@@ -18,8 +18,8 @@ int main() {
 
 
     Node* current = head;
-    int largest = current->data;
-    int secLargest = current->data;
+    int largest = head->data;
+    int secLargest = head->data;
 
     while(current != nullptr) {
         if(current->data > largest) {

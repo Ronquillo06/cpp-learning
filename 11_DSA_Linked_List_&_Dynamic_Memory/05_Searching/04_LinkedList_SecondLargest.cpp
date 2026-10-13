@@ -19,16 +19,29 @@ int main() {
 
     Node* current = head;
     int largest = current->data;
-    int secLargest;
+    int secLargest = current->data;
 
     while(current != nullptr) {
-        
+        if(current->data > largest) {
+            largest = current->data;
+        } 
 
+        if(current->data > secLargest && current->data < largest) {
+            secLargest = current->data;
+        }
+        
         current = current->next;
     }
 
+    cout << "Largest: " << largest << "\n";
+    cout << "Second Largest: " << secLargest << "\n"; 
 
 
+    while(head != nullptr) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
 
 
     return 0;

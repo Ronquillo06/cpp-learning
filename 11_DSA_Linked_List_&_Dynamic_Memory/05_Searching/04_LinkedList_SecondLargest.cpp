@@ -21,7 +21,11 @@ int main() {
     int largest = current->data;
     int secLargest;
 
-    
+    while(current != nullptr) {
+        
+
+        current = current->next;
+    }
 
 
 

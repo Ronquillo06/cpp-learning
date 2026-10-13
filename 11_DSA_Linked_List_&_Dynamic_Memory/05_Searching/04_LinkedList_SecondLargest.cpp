@@ -17,6 +17,15 @@ int main() {
     head->next->next->next->next->next = new Node{11};
 
 
+    Node* current = head;
+    int largest = current->data;
+    int secLargest;
+
+    
+
+
+
+
 
     return 0;
 }

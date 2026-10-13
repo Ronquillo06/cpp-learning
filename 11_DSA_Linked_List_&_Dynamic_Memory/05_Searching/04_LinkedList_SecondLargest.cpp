@@ -7,3 +7,11 @@ struct Node {
     Node* next = nullptr;
 };
 
+int main() {
+
+
+
+
+
+    return 0;
+}

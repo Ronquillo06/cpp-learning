@@ -24,9 +24,7 @@ int main() {
     while(current != nullptr) {
         if(current->data > largest) {
             largest = current->data;
-        } 
-
-        if(current->data > secLargest && current->data < largest) {
+        }else if(current->data > secLargest && current->data < largest) {
             secLargest = current->data;
         }
         

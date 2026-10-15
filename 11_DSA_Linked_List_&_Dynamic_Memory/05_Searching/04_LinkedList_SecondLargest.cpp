@@ -19,10 +19,11 @@ int main() {
 
     Node* current = head;
     int largest = head->data;
-    int secLargest = -1;
+    int secLargest = head->data;
 
     while(current != nullptr) {
         if(current->data > largest) {
+            secLargest = largest;     
             largest = current->data;
         }else if(current->data > secLargest && current->data < largest) {
             secLargest = current->data;

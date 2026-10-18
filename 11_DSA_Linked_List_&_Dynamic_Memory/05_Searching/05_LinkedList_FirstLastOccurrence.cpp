@@ -21,8 +21,10 @@ int main() {
     int target;
     cout << "Enter Target:";
     cin >> target;
+    int firstOccu = -1;
+    int lastOccu = -1;
+    int total = 0;
 
-    
 
 
 

@@ -18,6 +18,12 @@ int main() {
 
     Node* current = head;
 
+    int target;
+    cout << "Enter Target:";
+    cin >> target;
+
+    
+
 
 
     return 0;

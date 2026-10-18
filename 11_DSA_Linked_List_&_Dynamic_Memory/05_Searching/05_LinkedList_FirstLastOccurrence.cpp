@@ -15,6 +15,9 @@ int main() {
     head->next->next->next = new Node{8};
     head->next->next->next->next = new Node{8};
 
+    Node* current = head;
+    
+
 
     return 0;
 }

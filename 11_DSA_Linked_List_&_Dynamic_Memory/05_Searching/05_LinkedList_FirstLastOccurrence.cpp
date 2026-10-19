@@ -36,10 +36,16 @@ int main() {
         if(found) {
             continue;
         }
-        
+
     }
 
-    
+
+
+    while(head != nullptr) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
 
 
 

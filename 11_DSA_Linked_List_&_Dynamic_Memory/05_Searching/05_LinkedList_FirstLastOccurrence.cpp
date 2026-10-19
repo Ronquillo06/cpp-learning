@@ -25,6 +25,10 @@ int main() {
     int lastOccu = -1;
     int total = 0;
 
+    while(current != nullptr) {
+        
+    }
+
 
 
 

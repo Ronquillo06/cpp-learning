@@ -24,13 +24,22 @@ int main() {
     int firstOccu = -1;
     int lastOccu = -1;
     int total = 0;
+    bool found = false;
 
     while(current != nullptr) {
         if(current->data == target) {
             firstOccu = current->data;
-            
+            found = true;
+            break;
         }
+
+        if(found) {
+            continue;
+        }
+        
     }
+
+    
 
 
 

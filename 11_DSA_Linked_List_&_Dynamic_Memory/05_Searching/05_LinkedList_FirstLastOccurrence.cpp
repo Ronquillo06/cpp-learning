@@ -26,7 +26,10 @@ int main() {
     int total = 0;
 
     while(current != nullptr) {
-        
+        if(current->data == target) {
+            firstOccu = current->data;
+            
+        }
     }
 
 

@@ -37,6 +37,11 @@ int main() {
             continue;
         }
 
+        if(current->data == target) {
+            lastOccu = current->data;
+        }
+        current = current->next;
+
     }
 
 

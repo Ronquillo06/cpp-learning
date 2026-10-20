@@ -24,24 +24,21 @@ int main() {
     int firstOccu = -1;
     int lastOccu = -1;
     int total = 0;
-    bool found = false;
+    int currentIndex = 0;
 
     while(current != nullptr) {
         if(current->data == target) {
-            firstOccu = current->data;
-            found = true;
-            break;
+            if(firstOccu == -1) {
+                firstOccu = currentIndex;
+            }
+            
+            lastOccu = currentIndex;
+            total++;
+        
         }
-
-        if(found) {
-            continue;
-        }
-
-        if(current->data == target) {
-            lastOccu = current->data;
-        }
+        
+        currentIndex++;
         current = current->next;
-
     }
 
     cout << "First Occurrence: Index " << firstOccu << "\n"; 

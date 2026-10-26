@@ -47,6 +47,11 @@ int main() {
         cout << "First Occurrence: Index " << firstOccu << "\n"; 
         cout << "Last Occurrence: Index " << lastOccu << "\n"; 
         cout << "Total Occurrences: " << total << "\n";
+        cout << "\n";
+        cout << "\n";
+        cout << "\n";
+        cout << "\n";
+        cout << "\n";
     }
 
 

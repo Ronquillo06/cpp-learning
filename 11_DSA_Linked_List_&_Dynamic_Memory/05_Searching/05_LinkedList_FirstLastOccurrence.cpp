@@ -31,10 +31,8 @@ int main() {
             if(firstOccu == -1) {
                 firstOccu = currentIndex;
             }
-            
             lastOccu = currentIndex;
             total++;
-        
         }
         
         currentIndex++;
@@ -49,16 +47,11 @@ int main() {
         cout << "Total Occurrences: " << total << "\n";
     }
 
-
-
     while(head != nullptr) {
         Node* temp = head;
         head = head->next;
         delete temp;
     }
-
-
-
 
     return 0;
 }

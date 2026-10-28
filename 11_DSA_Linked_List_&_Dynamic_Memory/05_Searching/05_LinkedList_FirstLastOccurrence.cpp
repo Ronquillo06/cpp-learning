@@ -42,7 +42,9 @@ int main() {
     if (total == 0) {
         cout << "Target " << target << " not found in the linked list.\n";
     } else {
-        cout << "Hello! \n";
+        cout << "First Occurrence: Index " << firstOccu << "\n"; 
+        cout << "Last Occurrence: Index " << lastOccu << "\n"; 
+        cout << "Total Occurrences: " << total << "\n";
     }
 
     while(head != nullptr) {
